@@ -9,13 +9,15 @@ import Movies from "./Movies";
 function App() {
   return (
     <div>
-      <NavBar />
+    
+      <NavBar className = "navbar" />
       <Switch>
         <Route path="/actors" component={Actors} />
         <Route path="/directors" component={Directors} />
         <Route path="/movies" component={Movies} />
         <Route path="/" component={Home} />
       </Switch>
+     
     </div>
   );
 }
